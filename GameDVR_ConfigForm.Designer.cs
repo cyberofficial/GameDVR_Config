@@ -393,7 +393,6 @@
             this.Controls.Add(this.EnableAudioCaptureCheckBox);
             this.Controls.Add(this.EnableGameDVRCheckBox);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "GameDVR_ConfigForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game DVR Config";
