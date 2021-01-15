@@ -50,6 +50,23 @@
             this.RecordOnBatteryCheckBox = new System.Windows.Forms.CheckBox();
             this.RecordOnWirelessDisplayCheckBox = new System.Windows.Forms.CheckBox();
             this.SecondsLabel = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // EnableGameDVRCheckBox
@@ -58,7 +75,7 @@
             this.EnableGameDVRCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EnableGameDVRCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EnableGameDVRCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.EnableGameDVRCheckBox.Location = new System.Drawing.Point(17, 17);
+            this.EnableGameDVRCheckBox.Location = new System.Drawing.Point(11, 34);
             this.EnableGameDVRCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.EnableGameDVRCheckBox.Name = "EnableGameDVRCheckBox";
             this.EnableGameDVRCheckBox.Size = new System.Drawing.Size(225, 24);
@@ -73,7 +90,7 @@
             this.EnableAudioCaptureCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EnableAudioCaptureCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.EnableAudioCaptureCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.EnableAudioCaptureCheckBox.Location = new System.Drawing.Point(17, 57);
+            this.EnableAudioCaptureCheckBox.Location = new System.Drawing.Point(11, 34);
             this.EnableAudioCaptureCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.EnableAudioCaptureCheckBox.Name = "EnableAudioCaptureCheckBox";
             this.EnableAudioCaptureCheckBox.Size = new System.Drawing.Size(176, 24);
@@ -87,7 +104,7 @@
             this.AudioEncodingBitrateLabel.AutoSize = true;
             this.AudioEncodingBitrateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.AudioEncodingBitrateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.AudioEncodingBitrateLabel.Location = new System.Drawing.Point(13, 137);
+            this.AudioEncodingBitrateLabel.Location = new System.Drawing.Point(11, 34);
             this.AudioEncodingBitrateLabel.Margin = new System.Windows.Forms.Padding(8);
             this.AudioEncodingBitrateLabel.Name = "AudioEncodingBitrateLabel";
             this.AudioEncodingBitrateLabel.Size = new System.Drawing.Size(172, 20);
@@ -107,7 +124,7 @@
             "128",
             "160",
             "192"});
-            this.AudioBitrateComboBox.Location = new System.Drawing.Point(205, 134);
+            this.AudioBitrateComboBox.Location = new System.Drawing.Point(190, 31);
             this.AudioBitrateComboBox.Margin = new System.Windows.Forms.Padding(8);
             this.AudioBitrateComboBox.Name = "AudioBitrateComboBox";
             this.AudioBitrateComboBox.Size = new System.Drawing.Size(88, 28);
@@ -119,7 +136,7 @@
             this.kbpsLabel.AutoSize = true;
             this.kbpsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kbpsLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.kbpsLabel.Location = new System.Drawing.Point(309, 137);
+            this.kbpsLabel.Location = new System.Drawing.Point(282, 34);
             this.kbpsLabel.Margin = new System.Windows.Forms.Padding(8);
             this.kbpsLabel.Name = "kbpsLabel";
             this.kbpsLabel.Size = new System.Drawing.Size(53, 20);
@@ -131,7 +148,7 @@
             this.VideoEncodingBitrateLabel.AutoSize = true;
             this.VideoEncodingBitrateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.VideoEncodingBitrateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.VideoEncodingBitrateLabel.Location = new System.Drawing.Point(13, 173);
+            this.VideoEncodingBitrateLabel.Location = new System.Drawing.Point(11, 66);
             this.VideoEncodingBitrateLabel.Margin = new System.Windows.Forms.Padding(8);
             this.VideoEncodingBitrateLabel.Name = "VideoEncodingBitrateLabel";
             this.VideoEncodingBitrateLabel.Size = new System.Drawing.Size(172, 20);
@@ -143,7 +160,7 @@
             this.kbpsLabel2.AutoSize = true;
             this.kbpsLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kbpsLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.kbpsLabel2.Location = new System.Drawing.Point(309, 173);
+            this.kbpsLabel2.Location = new System.Drawing.Point(282, 66);
             this.kbpsLabel2.Margin = new System.Windows.Forms.Padding(8);
             this.kbpsLabel2.Name = "kbpsLabel2";
             this.kbpsLabel2.Size = new System.Drawing.Size(53, 20);
@@ -156,7 +173,7 @@
             this.VideoBitrateTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.VideoBitrateTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.VideoBitrateTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.VideoBitrateTextBox.Location = new System.Drawing.Point(205, 171);
+            this.VideoBitrateTextBox.Location = new System.Drawing.Point(190, 64);
             this.VideoBitrateTextBox.Margin = new System.Windows.Forms.Padding(8);
             this.VideoBitrateTextBox.Name = "VideoBitrateTextBox";
             this.VideoBitrateTextBox.Size = new System.Drawing.Size(88, 26);
@@ -169,7 +186,7 @@
             this.ResizeVideoCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ResizeVideoCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.ResizeVideoCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ResizeVideoCheckBox.Location = new System.Drawing.Point(17, 209);
+            this.ResizeVideoCheckBox.Location = new System.Drawing.Point(11, 34);
             this.ResizeVideoCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.ResizeVideoCheckBox.Name = "ResizeVideoCheckBox";
             this.ResizeVideoCheckBox.Size = new System.Drawing.Size(115, 24);
@@ -184,7 +201,7 @@
             this.WidthLabel.Enabled = false;
             this.WidthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.WidthLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.WidthLabel.Location = new System.Drawing.Point(37, 249);
+            this.WidthLabel.Location = new System.Drawing.Point(11, 63);
             this.WidthLabel.Margin = new System.Windows.Forms.Padding(8);
             this.WidthLabel.Name = "WidthLabel";
             this.WidthLabel.Size = new System.Drawing.Size(54, 20);
@@ -197,7 +214,7 @@
             this.HeightLabel.Enabled = false;
             this.HeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.HeightLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HeightLabel.Location = new System.Drawing.Point(37, 285);
+            this.HeightLabel.Location = new System.Drawing.Point(5, 91);
             this.HeightLabel.Margin = new System.Windows.Forms.Padding(8);
             this.HeightLabel.Name = "HeightLabel";
             this.HeightLabel.Size = new System.Drawing.Size(60, 20);
@@ -211,7 +228,7 @@
             this.WidthTextBox.Enabled = false;
             this.WidthTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.WidthTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.WidthTextBox.Location = new System.Drawing.Point(205, 247);
+            this.WidthTextBox.Location = new System.Drawing.Point(67, 61);
             this.WidthTextBox.Margin = new System.Windows.Forms.Padding(8);
             this.WidthTextBox.Name = "WidthTextBox";
             this.WidthTextBox.Size = new System.Drawing.Size(88, 26);
@@ -225,7 +242,7 @@
             this.HeightTextBox.Enabled = false;
             this.HeightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.HeightTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HeightTextBox.Location = new System.Drawing.Point(205, 283);
+            this.HeightTextBox.Location = new System.Drawing.Point(67, 89);
             this.HeightTextBox.Margin = new System.Windows.Forms.Padding(8);
             this.HeightTextBox.Name = "HeightTextBox";
             this.HeightTextBox.Size = new System.Drawing.Size(88, 26);
@@ -238,7 +255,7 @@
             this.EnableMicrophoneCaptureCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EnableMicrophoneCaptureCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.EnableMicrophoneCaptureCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.EnableMicrophoneCaptureCheckBox.Location = new System.Drawing.Point(17, 97);
+            this.EnableMicrophoneCaptureCheckBox.Location = new System.Drawing.Point(11, 65);
             this.EnableMicrophoneCaptureCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.EnableMicrophoneCaptureCheckBox.Name = "EnableMicrophoneCaptureCheckBox";
             this.EnableMicrophoneCaptureCheckBox.Size = new System.Drawing.Size(220, 24);
@@ -253,7 +270,7 @@
             this.ForceSoftwareMFTCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ForceSoftwareMFTCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.ForceSoftwareMFTCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ForceSoftwareMFTCheckBox.Location = new System.Drawing.Point(17, 321);
+            this.ForceSoftwareMFTCheckBox.Location = new System.Drawing.Point(11, 127);
             this.ForceSoftwareMFTCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.ForceSoftwareMFTCheckBox.Name = "ForceSoftwareMFTCheckBox";
             this.ForceSoftwareMFTCheckBox.Size = new System.Drawing.Size(285, 24);
@@ -268,7 +285,7 @@
             this.DisableCursorBlendingCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DisableCursorBlendingCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.DisableCursorBlendingCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.DisableCursorBlendingCheckBox.Location = new System.Drawing.Point(17, 361);
+            this.DisableCursorBlendingCheckBox.Location = new System.Drawing.Point(11, 34);
             this.DisableCursorBlendingCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.DisableCursorBlendingCheckBox.Name = "DisableCursorBlendingCheckBox";
             this.DisableCursorBlendingCheckBox.Size = new System.Drawing.Size(190, 24);
@@ -283,7 +300,7 @@
             this.BackgroundRecordingCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackgroundRecordingCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackgroundRecordingCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundRecordingCheckBox.Location = new System.Drawing.Point(17, 401);
+            this.BackgroundRecordingCheckBox.Location = new System.Drawing.Point(11, 34);
             this.BackgroundRecordingCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.BackgroundRecordingCheckBox.Name = "BackgroundRecordingCheckBox";
             this.BackgroundRecordingCheckBox.Size = new System.Drawing.Size(252, 24);
@@ -299,7 +316,7 @@
             this.RecordTheLastTextBox.Enabled = false;
             this.RecordTheLastTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.RecordTheLastTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.RecordTheLastTextBox.Location = new System.Drawing.Point(205, 441);
+            this.RecordTheLastTextBox.Location = new System.Drawing.Point(138, 61);
             this.RecordTheLastTextBox.Margin = new System.Windows.Forms.Padding(8);
             this.RecordTheLastTextBox.Name = "RecordTheLastTextBox";
             this.RecordTheLastTextBox.Size = new System.Drawing.Size(88, 26);
@@ -312,7 +329,7 @@
             this.RecordTheLastLabel.Enabled = false;
             this.RecordTheLastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.RecordTheLastLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.RecordTheLastLabel.Location = new System.Drawing.Point(37, 443);
+            this.RecordTheLastLabel.Location = new System.Drawing.Point(13, 63);
             this.RecordTheLastLabel.Margin = new System.Windows.Forms.Padding(8);
             this.RecordTheLastLabel.Name = "RecordTheLastLabel";
             this.RecordTheLastLabel.Size = new System.Drawing.Size(121, 20);
@@ -326,7 +343,7 @@
             this.RecordOnBatteryCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RecordOnBatteryCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecordOnBatteryCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.RecordOnBatteryCheckBox.Location = new System.Drawing.Point(41, 479);
+            this.RecordOnBatteryCheckBox.Location = new System.Drawing.Point(11, 99);
             this.RecordOnBatteryCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.RecordOnBatteryCheckBox.Name = "RecordOnBatteryCheckBox";
             this.RecordOnBatteryCheckBox.Size = new System.Drawing.Size(191, 24);
@@ -342,7 +359,7 @@
             this.RecordOnWirelessDisplayCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RecordOnWirelessDisplayCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecordOnWirelessDisplayCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.RecordOnWirelessDisplayCheckBox.Location = new System.Drawing.Point(41, 519);
+            this.RecordOnWirelessDisplayCheckBox.Location = new System.Drawing.Point(11, 127);
             this.RecordOnWirelessDisplayCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.RecordOnWirelessDisplayCheckBox.Name = "RecordOnWirelessDisplayCheckBox";
             this.RecordOnWirelessDisplayCheckBox.Size = new System.Drawing.Size(270, 24);
@@ -357,48 +374,160 @@
             this.SecondsLabel.Enabled = false;
             this.SecondsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SecondsLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.SecondsLabel.Location = new System.Drawing.Point(309, 443);
+            this.SecondsLabel.Location = new System.Drawing.Point(226, 63);
             this.SecondsLabel.Margin = new System.Windows.Forms.Padding(8);
             this.SecondsLabel.Name = "SecondsLabel";
             this.SecondsLabel.Size = new System.Drawing.Size(79, 20);
             this.SecondsLabel.TabIndex = 21;
             this.SecondsLabel.Text = "(seconds)";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(648, 509);
+            this.tabControl1.TabIndex = 22;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.Green;
+            this.tabPage1.Controls.Add(this.groupBox6);
+            this.tabPage1.Controls.Add(this.groupBox5);
+            this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.ForeColor = System.Drawing.Color.Green;
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(640, 471);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Main Controls";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Green;
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(640, 471);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Advanced User";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.EnableGameDVRCheckBox);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(246, 81);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Main Control";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.EnableAudioCaptureCheckBox);
+            this.groupBox2.Controls.Add(this.EnableMicrophoneCaptureCheckBox);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox2.Location = new System.Drawing.Point(258, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(237, 100);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Capture Devices";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.AudioEncodingBitrateLabel);
+            this.groupBox3.Controls.Add(this.VideoBitrateTextBox);
+            this.groupBox3.Controls.Add(this.kbpsLabel2);
+            this.groupBox3.Controls.Add(this.VideoEncodingBitrateLabel);
+            this.groupBox3.Controls.Add(this.AudioBitrateComboBox);
+            this.groupBox3.Controls.Add(this.kbpsLabel);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox3.Location = new System.Drawing.Point(6, 112);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(357, 100);
+            this.groupBox3.TabIndex = 16;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Bitrate Settings";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.ResizeVideoCheckBox);
+            this.groupBox4.Controls.Add(this.WidthLabel);
+            this.groupBox4.Controls.Add(this.HeightLabel);
+            this.groupBox4.Controls.Add(this.WidthTextBox);
+            this.groupBox4.Controls.Add(this.HeightTextBox);
+            this.groupBox4.Controls.Add(this.ForceSoftwareMFTCheckBox);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox4.Location = new System.Drawing.Point(6, 218);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(299, 161);
+            this.groupBox4.TabIndex = 17;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Video Settings";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.DisableCursorBlendingCheckBox);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox5.Location = new System.Drawing.Point(6, 385);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(214, 71);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Extra Settings";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.BackgroundRecordingCheckBox);
+            this.groupBox6.Controls.Add(this.SecondsLabel);
+            this.groupBox6.Controls.Add(this.RecordTheLastLabel);
+            this.groupBox6.Controls.Add(this.RecordOnWirelessDisplayCheckBox);
+            this.groupBox6.Controls.Add(this.RecordTheLastTextBox);
+            this.groupBox6.Controls.Add(this.RecordOnBatteryCheckBox);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox6.Location = new System.Drawing.Point(311, 218);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(315, 161);
+            this.groupBox6.TabIndex = 19;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Recording Settings";
+            // 
             // GameDVR_ConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(403, 562);
-            this.Controls.Add(this.SecondsLabel);
-            this.Controls.Add(this.RecordOnWirelessDisplayCheckBox);
-            this.Controls.Add(this.RecordOnBatteryCheckBox);
-            this.Controls.Add(this.RecordTheLastTextBox);
-            this.Controls.Add(this.RecordTheLastLabel);
-            this.Controls.Add(this.BackgroundRecordingCheckBox);
-            this.Controls.Add(this.DisableCursorBlendingCheckBox);
-            this.Controls.Add(this.ForceSoftwareMFTCheckBox);
-            this.Controls.Add(this.EnableMicrophoneCaptureCheckBox);
-            this.Controls.Add(this.HeightTextBox);
-            this.Controls.Add(this.WidthTextBox);
-            this.Controls.Add(this.HeightLabel);
-            this.Controls.Add(this.WidthLabel);
-            this.Controls.Add(this.ResizeVideoCheckBox);
-            this.Controls.Add(this.VideoBitrateTextBox);
-            this.Controls.Add(this.kbpsLabel2);
-            this.Controls.Add(this.VideoEncodingBitrateLabel);
-            this.Controls.Add(this.kbpsLabel);
-            this.Controls.Add(this.AudioBitrateComboBox);
-            this.Controls.Add(this.AudioEncodingBitrateLabel);
-            this.Controls.Add(this.EnableAudioCaptureCheckBox);
-            this.Controls.Add(this.EnableGameDVRCheckBox);
+            this.BackColor = System.Drawing.Color.Green;
+            this.ClientSize = new System.Drawing.Size(674, 537);
+            this.Controls.Add(this.tabControl1);
             this.MaximizeBox = false;
             this.Name = "GameDVR_ConfigForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game DVR Config";
             this.Load += new System.EventHandler(this.GameDVR_ConfigForm_Load);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -426,6 +555,15 @@
         private System.Windows.Forms.CheckBox RecordOnBatteryCheckBox;
         private System.Windows.Forms.CheckBox RecordOnWirelessDisplayCheckBox;
         private System.Windows.Forms.Label SecondsLabel;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 

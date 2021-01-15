@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameDVR_Config", "GameDVR_Config.csproj", "{A2B1FFFE-DA8E-498B-9E7F-92F61EDF685B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameDVR_Config", "dotnet50\GameDVR_Config.csproj", "{6310AC88-9615-42EF-96CA-C86093BBAD05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A2B1FFFE-DA8E-498B-9E7F-92F61EDF685B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2B1FFFE-DA8E-498B-9E7F-92F61EDF685B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2B1FFFE-DA8E-498B-9E7F-92F61EDF685B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6310AC88-9615-42EF-96CA-C86093BBAD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6310AC88-9615-42EF-96CA-C86093BBAD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6310AC88-9615-42EF-96CA-C86093BBAD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6310AC88-9615-42EF-96CA-C86093BBAD05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

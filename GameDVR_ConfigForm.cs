@@ -20,6 +20,7 @@ namespace GameDVR_Config
 
         private void GameDVR_ConfigForm_Load(object sender, EventArgs e)
         {
+            tabControl1.TabPages.Remove(tabPage2);
             EnableGameDVRCheckBox.Checked = GetBool("AppCaptureEnabled", true);
             EnableAudioCaptureCheckBox.Checked = GetBool("AudioCaptureEnabled", true);
             EnableMicrophoneCaptureCheckBox.Checked = GetBool("MicrophoneCaptureEnabled", false);
