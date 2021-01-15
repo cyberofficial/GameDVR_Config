@@ -1,8 +1,50 @@
-# Maintaining
-I will work on this program and help out keeping this project alive.
-All credit to FunkyFr3sh for the orignal code up until the last commit.
+### Info
+Original Repo
+https://github.com/FunkyFr3sh/GameDVR_Config
+The Repo is 5/6 years out of date, many changes occured aswell as api changes.
+I will be keeping tabs on this project most of the time now.
 
-# GameDVR_Config
-Config tool for the windows 10 Game DVR. The tool allows fine tuning of certain hidden settings, e.g. bitrates up to 30000 and upscaling.
+---------
 
-MIT License
+### Updates
+- New UI
+
+---------
+
+### Visual
+![UI](https://i.imgur.com/jOv4cqY.png)
+
+---------
+
+### Upcomming Changes
+- Advanced Settings
+- Moving to .net 5.0 Core for better realiablity.
+- Adding notification to determine if your system is able to actually use DVR or not.
+
+---------
+
+### Help
+To change keybinds, press "`winkey` + `i`"
+
+then Press the Gaming Button
+
+Shown Here: 		![BUTTON](https://i.imgur.com/rpbnGob.png) 
+
+From here, change the keybinds to what you wish.
+
+---------
+
+### Current Options To Configure
+- Switch DVR On/Off
+- Bit Rate settings
+	- Audio
+	- Video
+- Video Options
+- Background Recording
+- Fix blinky cursor if it happens to you
+- Audio Capture for Mic / Gameplay
+
+---------
+
+### Support
+Please open a new issue for support/help/questions.

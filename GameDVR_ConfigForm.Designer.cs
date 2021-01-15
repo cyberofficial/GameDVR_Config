@@ -52,21 +52,22 @@
             this.SecondsLabel = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // EnableGameDVRCheckBox
@@ -75,7 +76,7 @@
             this.EnableGameDVRCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EnableGameDVRCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EnableGameDVRCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.EnableGameDVRCheckBox.Location = new System.Drawing.Point(11, 34);
+            this.EnableGameDVRCheckBox.Location = new System.Drawing.Point(9, 32);
             this.EnableGameDVRCheckBox.Margin = new System.Windows.Forms.Padding(8);
             this.EnableGameDVRCheckBox.Name = "EnableGameDVRCheckBox";
             this.EnableGameDVRCheckBox.Size = new System.Drawing.Size(225, 24);
@@ -389,7 +390,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(648, 509);
+            this.tabControl1.Size = new System.Drawing.Size(642, 427);
             this.tabControl1.TabIndex = 22;
             // 
             // tabPage1
@@ -401,89 +402,13 @@
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.ForeColor = System.Drawing.Color.Green;
+            this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(640, 471);
+            this.tabPage1.Size = new System.Drawing.Size(634, 389);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Main Controls";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.Green;
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(640, 471);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Advanced User";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.EnableGameDVRCheckBox);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.groupBox1.Location = new System.Drawing.Point(6, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(246, 81);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Main Control";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.EnableAudioCaptureCheckBox);
-            this.groupBox2.Controls.Add(this.EnableMicrophoneCaptureCheckBox);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.groupBox2.Location = new System.Drawing.Point(258, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(237, 100);
-            this.groupBox2.TabIndex = 15;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Capture Devices";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.AudioEncodingBitrateLabel);
-            this.groupBox3.Controls.Add(this.VideoBitrateTextBox);
-            this.groupBox3.Controls.Add(this.kbpsLabel2);
-            this.groupBox3.Controls.Add(this.VideoEncodingBitrateLabel);
-            this.groupBox3.Controls.Add(this.AudioBitrateComboBox);
-            this.groupBox3.Controls.Add(this.kbpsLabel);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.groupBox3.Location = new System.Drawing.Point(6, 112);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(357, 100);
-            this.groupBox3.TabIndex = 16;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Bitrate Settings";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.ResizeVideoCheckBox);
-            this.groupBox4.Controls.Add(this.WidthLabel);
-            this.groupBox4.Controls.Add(this.HeightLabel);
-            this.groupBox4.Controls.Add(this.WidthTextBox);
-            this.groupBox4.Controls.Add(this.HeightTextBox);
-            this.groupBox4.Controls.Add(this.ForceSoftwareMFTCheckBox);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.groupBox4.Location = new System.Drawing.Point(6, 218);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(299, 161);
-            this.groupBox4.TabIndex = 17;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Video Settings";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.DisableCursorBlendingCheckBox);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.groupBox5.Location = new System.Drawing.Point(6, 385);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(214, 71);
-            this.groupBox5.TabIndex = 18;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Extra Settings";
             // 
             // groupBox6
             // 
@@ -494,19 +419,106 @@
             this.groupBox6.Controls.Add(this.RecordTheLastTextBox);
             this.groupBox6.Controls.Add(this.RecordOnBatteryCheckBox);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.groupBox6.Location = new System.Drawing.Point(311, 218);
+            this.groupBox6.Location = new System.Drawing.Point(311, 115);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(315, 161);
+            this.groupBox6.Size = new System.Drawing.Size(313, 161);
             this.groupBox6.TabIndex = 19;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Recording Settings";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.DisableCursorBlendingCheckBox);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox5.Location = new System.Drawing.Point(6, 282);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(214, 71);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Extra Settings";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.ResizeVideoCheckBox);
+            this.groupBox4.Controls.Add(this.WidthLabel);
+            this.groupBox4.Controls.Add(this.HeightLabel);
+            this.groupBox4.Controls.Add(this.WidthTextBox);
+            this.groupBox4.Controls.Add(this.HeightTextBox);
+            this.groupBox4.Controls.Add(this.ForceSoftwareMFTCheckBox);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox4.Location = new System.Drawing.Point(6, 115);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(299, 161);
+            this.groupBox4.TabIndex = 17;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Video Settings";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.AudioEncodingBitrateLabel);
+            this.groupBox3.Controls.Add(this.VideoBitrateTextBox);
+            this.groupBox3.Controls.Add(this.kbpsLabel2);
+            this.groupBox3.Controls.Add(this.VideoEncodingBitrateLabel);
+            this.groupBox3.Controls.Add(this.AudioBitrateComboBox);
+            this.groupBox3.Controls.Add(this.kbpsLabel);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox3.Location = new System.Drawing.Point(259, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(365, 100);
+            this.groupBox3.TabIndex = 16;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Bitrate Settings";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.EnableAudioCaptureCheckBox);
+            this.groupBox2.Controls.Add(this.EnableMicrophoneCaptureCheckBox);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox2.Location = new System.Drawing.Point(387, 282);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(237, 100);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Capture Devices";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.EnableGameDVRCheckBox);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(246, 100);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Main Control";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Green;
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(634, 389);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Advanced User";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(10, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(206, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Turn this On to Enable DVR";
             // 
             // GameDVR_ConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(674, 537);
+            this.ClientSize = new System.Drawing.Size(664, 457);
             this.Controls.Add(this.tabControl1);
             this.MaximizeBox = false;
             this.Name = "GameDVR_ConfigForm";
@@ -515,18 +527,18 @@
             this.Load += new System.EventHandler(this.GameDVR_ConfigForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -564,6 +576,7 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label1;
     }
 }
 
