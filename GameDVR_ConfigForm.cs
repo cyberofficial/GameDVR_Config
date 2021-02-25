@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+﻿using Microsoft.Win32;
+using System;
 using System.Windows.Forms;
-using Microsoft.Win32;
 
 namespace GameDVR_Config
 {
     public partial class GameDVR_ConfigForm : Form
     {
-        const string keyName = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\GameDVR";
+        private const string keyName = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\GameDVR";
 
         public GameDVR_ConfigForm()
         {
@@ -20,7 +15,7 @@ namespace GameDVR_Config
 
         private void GameDVR_ConfigForm_Load(object sender, EventArgs e)
         {
-            tabControl1.TabPages.Remove(tabPage2);
+            //tabControl1.TabPages.Remove(tabPage2);
             EnableGameDVRCheckBox.Checked = GetBool("AppCaptureEnabled", true);
             EnableAudioCaptureCheckBox.Checked = GetBool("AudioCaptureEnabled", true);
             EnableMicrophoneCaptureCheckBox.Checked = GetBool("MicrophoneCaptureEnabled", false);
@@ -29,7 +24,9 @@ namespace GameDVR_Config
             finally
             {
                 if (AudioBitrateComboBox.SelectedIndex == -1)
+                {
                     AudioBitrateComboBox.SelectedIndex = 3;
+                }
             }
             int videoBitrate = GetInt("CustomVideoEncodingBitrate", 4000000);
             VideoBitrateTextBox.Text = (videoBitrate / 1000).ToString();
@@ -113,7 +110,7 @@ namespace GameDVR_Config
         private void BackgroundRecordingCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             SetBool("HistoricalCaptureEnabled", BackgroundRecordingCheckBox.Checked);
-            RecordTheLastLabel.Enabled = RecordTheLastTextBox.Enabled = RecordOnBatteryCheckBox.Enabled = 
+            RecordTheLastLabel.Enabled = RecordTheLastTextBox.Enabled = RecordOnBatteryCheckBox.Enabled =
                 RecordOnWirelessDisplayCheckBox.Enabled = SecondsLabel.Enabled = BackgroundRecordingCheckBox.Checked;
         }
 
@@ -136,24 +133,24 @@ namespace GameDVR_Config
             SetBool("HistoricalCaptureOnWirelessDisplayAllowed", RecordOnWirelessDisplayCheckBox.Checked);
         }
 
-        int GetInt(string valueName, int defaultValue)
+        private int GetInt(string valueName, int defaultValue)
         {
             try { return (int)Registry.GetValue(keyName, valueName, defaultValue.ToString()); }
             catch { return defaultValue; }
         }
 
-        bool GetBool(string valueName, bool defaultValue)
+        private bool GetBool(string valueName, bool defaultValue)
         {
             try { return (int)Registry.GetValue(keyName, valueName, defaultValue ? "1" : "0") == 1; }
             catch { return defaultValue; }
         }
 
-        void SetInt(string valueName, int value)
+        private void SetInt(string valueName, int value)
         {
             Registry.SetValue(keyName, valueName, value);
         }
 
-        void SetBool(string valueName, bool value)
+        private void SetBool(string valueName, bool value)
         {
             Registry.SetValue(keyName, valueName, value ? 1 : 0);
         }
