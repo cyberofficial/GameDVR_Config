@@ -59,6 +59,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.OverrideHardwareEncoderCheckBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -67,6 +69,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // EnableGameDVRCheckBox
@@ -394,6 +397,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Green;
+            this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox6);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
@@ -501,6 +505,30 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Turn this On to Enable DVR";
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.OverrideHardwareEncoderCheckBox);
+            this.groupBox7.Location = new System.Drawing.Point(6, 382);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(406, 63);
+            this.groupBox7.TabIndex = 20;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Hidden Controls";
+            // 
+            // OverrideHardwareEncoderCheckBox
+            // 
+            this.OverrideHardwareEncoderCheckBox.AutoSize = true;
+            this.OverrideHardwareEncoderCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OverrideHardwareEncoderCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.OverrideHardwareEncoderCheckBox.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.OverrideHardwareEncoderCheckBox.Location = new System.Drawing.Point(8, 29);
+            this.OverrideHardwareEncoderCheckBox.Name = "OverrideHardwareEncoderCheckBox";
+            this.OverrideHardwareEncoderCheckBox.Size = new System.Drawing.Size(389, 24);
+            this.OverrideHardwareEncoderCheckBox.TabIndex = 0;
+            this.OverrideHardwareEncoderCheckBox.Text = "Override hardware encoder (force software fallback)";
+            this.OverrideHardwareEncoderCheckBox.UseVisualStyleBackColor = true;
+            this.OverrideHardwareEncoderCheckBox.CheckedChanged += new System.EventHandler(this.OverrideHardwareEncoderCheckBox_CheckedChanged);
+            // 
             // GameDVR_ConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -528,6 +556,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -565,6 +595,8 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.CheckBox OverrideHardwareEncoderCheckBox;
     }
 }
 

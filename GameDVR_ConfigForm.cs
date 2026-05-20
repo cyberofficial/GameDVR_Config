@@ -1,5 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace GameDVR_Config
@@ -15,6 +17,7 @@ namespace GameDVR_Config
 
         private void GameDVR_ConfigForm_Load(object sender, EventArgs e)
         {
+            BackupRegistry();
             //tabControl1.TabPages.Remove(tabPage2);
             EnableGameDVRCheckBox.Checked = GetBool("AppCaptureEnabled", true);
             EnableAudioCaptureCheckBox.Checked = GetBool("AudioCaptureEnabled", true);
@@ -155,5 +158,48 @@ namespace GameDVR_Config
             Registry.SetValue(keyName, valueName, value ? 1 : 0);
         }
 
+        private void OverrideHardwareEncoderCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            SetBool("OverrideHasHardwareEncoder", OverrideHardwareEncoderCheckBox.Checked);
+        }
+
+        private void BackupRegistry()
+        {
+            try
+            {
+                using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR"))
+                {
+                    if (key == null) return;
+
+                    string[] valueNames = key.GetValueNames();
+                    if (valueNames.Length == 0) return;
+
+                    string date = DateTime.Now.ToString("yyyy-MM-dd");
+                    string path = Path.Combine(Application.StartupPath, $"GameDVR_Config_backup_{date}.reg");
+
+                    var sb = new StringBuilder();
+                    sb.AppendLine("Windows Registry Editor Version 5.00");
+                    sb.AppendLine();
+                    sb.AppendLine(@"[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR]");
+
+                    foreach (string name in valueNames)
+                    {
+                        object value = key.GetValue(name);
+                        if (value is int intVal)
+                            sb.AppendLine($"\"{name}\"=dword:{intVal:X8}");
+                        else if (value is long longVal)
+                            sb.AppendLine($"\"{name}\"=hex(b):{BitConverter.ToString(BitConverter.GetBytes(longVal)).Replace('-', ',')}");
+                        else if (value is string strVal)
+                            sb.AppendLine($"\"{name}\"=\"{strVal}\"");
+                    }
+
+                    File.WriteAllText(path, sb.ToString());
+                }
+            }
+            catch
+            {
+                // Silently ignore backup failures
+            }
+        }
     }
 }
